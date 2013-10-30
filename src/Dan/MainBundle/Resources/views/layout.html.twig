@@ -1,0 +1,56 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}My Title{% endblock %}
+
+{% block head_style %}
+    {% stylesheets filter='lessphp,cssembed,?yui_css'
+        '@DanMainBundle/Resources/public/less/index.less'
+        %}
+        <link href="{{ asset_url }}" type="text/css" rel="stylesheet"
+            media="screen" />
+    {% endstylesheets %}
+    {% stylesheets filter='cssembed,?yui_css'
+        '@DanMainBundle/Resources/public/jquery-ui-1.8.18.custom/css/ui-lightness/jquery-ui-1.8.18.custom.css'
+         %}
+        <link href="{{ asset_url }}"
+            type="text/css"
+            rel="stylesheet"
+            media="screen" />
+    {% endstylesheets %}
+{% endblock %}
+
+{% block head_script %}
+    <script data-main="bundles/danmain/js/main" src="bundles/danmain/js/libs/require/require.js"></script>
+{% endblock %}
+
+{% block body %}
+
+    {% block container %}
+        {% block navbar %}
+            {% include 'DanMainBundle::navbar.html.twig' %}
+        {% endblock navbar %}
+        <div class="container">
+            <div class="content">
+                {% block content %}
+                {% endblock content %}
+            </div>
+            <footer>
+                {% block footer %}
+                {% endblock footer %}
+            </footer>
+        </div>
+    {% endblock container %}
+{% endblock %}
+
+{% block foot_script %}
+    {# To only use a subset or add more js overwrite and copy paste this block #}
+        <script type="text/javascript">
+            if (window.location.hash == '#_=_'){
+                window.location.hash = '';
+            }
+            if (window.location.pathname == '/_=_'){
+                window.location.pathname = '';
+            }
+        </script>
+
+{% endblock foot_script %} 
