@@ -38,20 +38,14 @@
     
     <target name="clear"
             description="Clear all not required files">
-        <exec command="php app/console cache:clear" outputProperty="return" />
+        <phingcall target="cc" />
         <echo message="${return}"></echo>       
         <exec command="rm app/logs/*" outputProperty="return" />
         <echo message="${return}"></echo>       
     </target>
     
-    <target name="cache"
-            description="Clear all cache files">
-        <echo msg="Cache" />
-        <exec command="rm -Rf app/cache/*" outputProperty="return" />
-    </target>
-    
-        <target name="cc"
-            description="Run cache clear in dev env">
+    <target name="cc"
+            description="Clear cache">
         <exec command="rm -Rf app/cache/*" outputProperty="return" />
     </target>
 

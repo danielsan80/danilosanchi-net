@@ -1,17 +1,17 @@
-set :application, "ventoonirico"
-set :domain,      "ventoonirico.danilosanchi.net"
-set :deploy_to,   "/var/www/vhosts/ventoonirico.danilosanchi.net/symfony_projects/"
+set :application, "danilosanchi"
+set :domain,      "new.danilosanchi.net"
+set :deploy_to,   "/var/www/vhosts/new.danilosanchi.net/symfony_projects/"
 
 role :web,        domain
 role :app,        domain                    
 role :db,         domain, :primary => true 
 
 set :serverName, "sg111.servergrove.com" # The server's hostname
-set :repository,  "git@github.com:danielsan80/ventoonirico.git"
+set :repository,  "git@github.com:danielsan80/danilosanchi-net.git"
 set :scm,         :git
 
 set :deploy_via,      :rsync_with_remote_cache
-set :user,       "ventoonirico"
+set :user,       "tmp"
 ssh_options[:port] = 22123
 
 set :shared_children, ["vendor", "web", "app", "app/config", "app/logs", "app/files/images/users", "/web/media"]
