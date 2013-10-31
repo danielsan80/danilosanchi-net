@@ -1,6 +1,6 @@
 set :application, "danilosanchi"
 set :domain,      "danilosanchi.net"
-set :deploy_to,   "/var/www/vhosts/#{domain}/symfony_projects/projects/danilosanchi"
+set :deploy_to,   "/var/www/vhosts/#{domain}/symfony_projects"
 
 role :web,        domain
 role :app,        domain                    
@@ -49,7 +49,7 @@ namespace :dan do
 
     desc "Link and update vendors"
     task :vendors do
-        run "cd #{current_path} && curl -sS https://getcomposer.org/installer | php"
+#        run "cd #{current_path} && curl -sS https://getcomposer.org/installer | php"
         run "cd #{current_path} && php composer.phar install"
     end
 
