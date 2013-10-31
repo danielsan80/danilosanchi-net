@@ -6,13 +6,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>#}
-
-            {% image '@DanMainBundle/Resources/public/img/logo.png'
-                output='/img/logo.png' %}
-                <a class="brand logo" href="{{ path('home') }}"><img src="{{ asset_url }}" alt="Ventoonirico"/></a>
-            {% endimage %}
-            {#<a class="brand" href="{{ path('home') }}">Home</a>#}
-
+            <a class="brand" href="{{ path('home') }}">Danilo Sanchi</a>
+            
             {% if app.user %}
                 <div class="logout pull-right">
                     <a href="{{ path('logout')}}" class="icon-off" title="logout" ></a>
@@ -36,7 +31,7 @@
             {% endif %}
                     
             <div class="nav-collapse">
-                {#{{ knp_menu_render(mainMenu, {'currentClass': 'active', 'ancestorClass': 'active'}) }}#}
+                {#{ knp_menu_render(mainMenu, {'currentClass': 'active', 'ancestorClass': 'active'}) }#}
             </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-// Readable 2.3.1
+//
 // Variables
 // --------------------------------------------------
 
@@ -20,38 +20,38 @@
 
 // Accent colors
 // -------------------------
-@blue:                  #0063AC;
+@blue:                  #049cdb;
 @blueDark:              #0064cd;
-@green:                 #1C9B47;
-@red:                   #9c0001;
-@yellow:                #F8D60D;
-@orange:                #E78B24;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        #F6F6F6;
+@bodyBackground:        @white;
 @textColor:             @grayDark;
 
 
 // Links
 // -------------------------
-@linkColor:             @orange;
-@linkColorHover:        darken(@linkColor, 5%);
+@linkColor:             #08c;
+@linkColorHover:        darken(@linkColor, 15%);
 
 
 // Typography
 // -------------------------
 @sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       "Lora", Georgia, "Times New Roman", Times, serif;
+@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          17px;
-@baseFontFamily:        @serifFontFamily;
-@baseLineHeight:        26px;
-@altFontFamily:         @sansFontFamily;
+@baseFontSize:          14px;
+@baseFontFamily:        @sansFontFamily;
+@baseLineHeight:        20px;
+@altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
@@ -68,7 +68,7 @@
 
 @paddingLarge:          11px 19px; // 44px
 @paddingSmall:          2px 10px;  // 26px
-@paddingMini:           0px 6px;   // 22px
+@paddingMini:           0 6px;   // 22px
 
 @baseBorderRadius:      4px;
 @borderRadiusLarge:     6px;
@@ -84,27 +84,27 @@
 
 // Buttons
 // -------------------------
-@btnBackground:                     @grayLighter;
-@btnBackgroundHighlight:            darken(@grayLighter, 5%);
-@btnBorder:                         #ccc;
+@btnBackground:                     @white;
+@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBorder:                         #bbb;
 
-@btnPrimaryBackground:              lighten(@linkColor, 5%);
-@btnPrimaryBackgroundHighlight:     @linkColor;
+@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
 
-@btnInfoBackground:                 lighten(@blue, 5%);
-@btnInfoBackgroundHighlight:        @blue;
+@btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
 
-@btnSuccessBackground:              lighten(@green, 5%);
-@btnSuccessBackgroundHighlight:     @green;
+@btnSuccessBackground:              #62c462;
+@btnSuccessBackgroundHighlight:     #51a351;
 
-@btnWarningBackground:              lighten(@yellow, 5%);
-@btnWarningBackgroundHighlight:     @yellow;
+@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackgroundHighlight:     @orange;
 
-@btnDangerBackground:               lighten(@red, 5%);
-@btnDangerBackgroundHighlight:      @red;
+@btnDangerBackground:               #ee5f5b;
+@btnDangerBackgroundHighlight:      #bd362f;
 
-@btnInverseBackground:              lighten(@grayDark, 5%);
-@btnInverseBackgroundHighlight:     @grayDark;
+@btnInverseBackground:              #444;
+@btnInverseBackgroundHighlight:     @grayDarker;
 
 
 // Forms
@@ -119,7 +119,7 @@
 
 // Dropdowns
 // -------------------------
-@dropdownBackground:            @bodyBackground;
+@dropdownBackground:            @white;
 @dropdownBorder:                rgba(0,0,0,.2);
 @dropdownDividerTop:            #e5e5e5;
 @dropdownDividerBottom:         @white;
@@ -151,8 +151,8 @@
 
 // Sprite icons path
 // -------------------------
-@iconSpritePath:          "../bootstrap/img/glyphicons-halflings.png";
-@iconWhiteSpritePath:     "../bootstrap/img/glyphicons-halflings-white.png";
+@iconSpritePath:          "../img/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
 
 
 // Input placeholder text color
@@ -172,7 +172,7 @@
 
 // Wells
 // -------------------------
-@wellBackground:                  #fefefe;
+@wellBackground:                  #f5f5f5;
 
 
 // Navbar
@@ -180,23 +180,23 @@
 @navbarCollapseWidth:             979px;
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
-@navbarHeight:                    60px;
-@navbarBackgroundHighlight:       @bodyBackground;
-@navbarBackground:                @bodyBackground;
+@navbarHeight:                    40px;
+@navbarBackgroundHighlight:       #ffffff;
+@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
-@navbarText:                      @textColor;
-@navbarLinkColor:                 @textColor;
-@navbarLinkColorHover:            @textColor;
-@navbarLinkColorActive:           @textColor;
+@navbarText:                      #777;
+@navbarLinkColor:                 #777;
+@navbarLinkColorHover:            @grayDark;
+@navbarLinkColorActive:           @gray;
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
 
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                @grayDark;
-@navbarInverseBackgroundHighlight:       @grayDark;
+@navbarInverseBackground:                #111111;
+@navbarInverseBackgroundHighlight:       #222222;
 @navbarInverseBorder:                    #252525;
 
 @navbarInverseText:                      @grayLight;
@@ -223,26 +223,26 @@
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              #fefefe;
+@heroUnitBackground:              @grayLighter;
 @heroUnitHeadingColor:            inherit;
 @heroUnitLeadColor:               inherit;
 
 
 // Form states and alerts
 // -------------------------
-@warningText:             @orange;
+@warningText:             #c09853;
 @warningBackground:       #fcf8e3;
 @warningBorder:           darken(spin(@warningBackground, -10), 3%);
 
-@errorText:               @red;
+@errorText:               #b94a48;
 @errorBackground:         #f2dede;
 @errorBorder:             darken(spin(@errorBackground, -10), 3%);
 
-@successText:             @green;
+@successText:             #468847;
 @successBackground:       #dff0d8;
 @successBorder:           darken(spin(@successBackground, -10), 5%);
 
-@infoText:                @blue;
+@infoText:                #3a87ad;
 @infoBackground:          #d9edf7;
 @infoBorder:              darken(spin(@infoBackground, -10), 7%);
 

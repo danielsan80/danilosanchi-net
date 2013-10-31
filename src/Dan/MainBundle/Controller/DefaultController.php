@@ -2,13 +2,22 @@
 
 namespace Dan\MainBundle\Controller;
 
-use Dan\CommonBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Component\HttpFoundation\Response;
+
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Tester\CommandTester;
+use Symfony\Component\Console\Input\ArgvInput;
+use Symfony\Component\Console\Output\ConsoleOutput;
+
+use Dan\CommonBundle\Controller\Controller;
 
 /**
- * @Route("") 
+ * Default controller.
+ * 
+ * @Route("")
  */
 class DefaultController extends Controller
 {
@@ -16,17 +25,27 @@ class DefaultController extends Controller
     /**
      * Home page
      * 
-     * @Route("", name="home")
+     * @Route("/", name="home")
      * @Template
      */
-    public function indexAction()
+    public function homeAction()
     {
-        if ($this->getRequest()->getHost()=='ventoonirico') {
-            return $this->redirect('http://ventoonirico.local.com'.$this->generateUrl('home'));
-        }
-        if (strrpos($this->getRequest()->getRequestUri(),'/')!==0) {
-            return $this->redirect(substr($this->generateUrl('home'),0,-1));
-        }
         return array();
     }
+    
+    /**
+     * Bridge to view blog feed
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/feed/blog", name="feed_blog")
+     */
+    public function feedBlogAction()
+    {
+        $feed = file_get_contents('http://blog.danilosanchi.net/feed/');
+
+        $response = new Response($feed,200, array(
+            'Content-Type' => 'application/xml'
+        ));
+        return $response;
+    }
+
 }

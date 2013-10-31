@@ -1,0 +1,145 @@
+{% extends 'DanMainBundle::layout.html.twig' %}
+
+
+{% block container %}
+    <div class="container home">
+        <div class="content">
+            <div class="picture pull-right" >
+                {% include "DanMainBundle:Default:_picture.html.twig" %}
+            </div>
+            <div class="row">
+                <div class="span8 maincol">
+                    <div class="logo">
+                        {% include "DanMainBundle:Default:_logo.html.twig" %}
+                    </div>
+                    <div class="social">
+                        {% include "DanMainBundle:Default:_social.html.twig" %}
+                    </div>
+                    <div class="intro postit">
+                        <p>
+                            Ciao, io sono <a target="_blank" href="https://twitter.com/danielsan80">Danilo</a><br/>
+                            e <a target="_blank" href="http://www.linkedin.com/pub/danilo-sanchi/49/121/300">lavoro</a> con Internet.<br/>
+                        </p>
+                        <p>
+                            Sono un <strong><a target="_blank" href="http://en.wikipedia.org/wiki/Web_developer">web developer</a></strong>.
+                        </p>
+                        <p>
+                            Qui c'è tutto ciò che mi riguarda.
+                        </p>
+                            Se pensi che si possa realizzare qualcosa di bello insieme<br/>
+                            non esitare a <a href="mailto:mask.danilo@gmail.com">contattarmi</a>
+                        </p>
+                        <p>
+                            A presto!
+                        </p>
+{#
+                        <p>
+                            Recentemente ho collaborato alla realizzazione di <a target="_blank" href="http://abmundi.com">ABMundi</a>
+                            insieme a <a target="_blank" href="https://twitter.com/fabbrucci">Fabio Fabbrucci</a>,
+                            <a target="_blank" href="https://twitter.com/sensorario">Simone Gentili (Demo)</a>
+                            ed i ragazzi del blog <a target="_blank" href="http://http://www.abettermundi.com">A Better Mundi</a>.
+                        </p>
+                        <p>
+                            Realizzo i miei progetti principalmente con <a target="_blank" href="http://symfony.com">Symfony 2</a>, un potentissimo framework <a target="_blank" href="http://www.php.net">PHP</a>,
+                            e con il suo fratellino <a target="_blank" href="http://silex.sensiolabs.org">Silex</a>.
+                        </p>
+                        <p>
+                            Sono associato al <a target="_blank" href="http://www.grusp.it" >Gr.U.S.P</a> e partecipo spesso agli incontri dello <a target="_blank" href="https://groups.google.com/group/xpug-romagna">XPUG Romagna</a>.<br/>
+                            Ogni anno vado <a target="_blank" href="https://maps.google.com/maps?q=Hotel+San+Marco+city+resort+%26+SPA,+Via+Baldassarre+Longhena,+Verona,+VR,+Italia&hl=it&ll=45.441104,10.97193&spn=0.010358,0.021329&sll=45.44011,10.971791&sspn=0.00259,0.005332&oq=Hotel+San+Marco+&hq=Hotel+San+Marco+city+resort+%26+SPA,&hnear=Via+Baldassarre+Longhena,+Verona,+Veneto,+Italia&t=m&z=16&iwloc=A" >Verona</a> per il <a target="_blank" href="http://2013.phpday.it" >PHPDay</a>.
+                        </p>
+                        <p>
+                            In inverno faccio snowboard con i mitici <a target="_blank" href="http://www.ridernation.it">Rider Nation</a>.<br/>
+                            A volta in estate tiro qualche freccia con i ragazzi della <a target="_blank" href="http://www.sevenarrows.it/">Seven Arrows</a>.
+                        </p>
+                        
+#}
+                        {#
+                        Hi, I'm <a target="_blank" href="https://twitter.com/danielsan80">Danilo</a>.
+                        <br/>
+                        I am a <strong><u><a target="_blank" href="http://en.wikipedia.org/wiki/Web_developer">web developer</a></u></strong>.
+                        <br/>
+
+                        I love the Internet and <a target="_blank" href="http://www.linkedin.com/pub/danilo-sanchi/49/121/300">working</a> with it.
+
+                        I recently worked on <a target="_blank" href="http://abmundi.com">ABMundi</a>
+                        with <a target="_blank" href="https://twitter.com/fabbrucci">Fabio Fabbrucci</a>,
+                        <a target="_blank" href="https://twitter.com/sensorario">Simone Gentili (Demo)</a>
+                        and the <a target="_blank" href="http://http://www.abettermundi.com">A Better Mundi Blog</a> guys.
+
+                        I develop my web projects maily using <a target="_blank" href="http://symfony.com">Symfony 2</a>, a powerfull <a target="_blank" href="http://www.php.net">PHP</a> Framework,
+                        and his little brother <a target="_blank" href="http://silex.sensiolabs.org">Silex</a>.
+
+                        I'm associated with <a target="_blank" href="http://www.grusp.it" >Gr.U.S.P</a> and I attend in <a target="_blank" href="https://groups.google.com/group/xpug-romagna">XPUG Romagna</a> meetings.
+                        <br/>
+                        Every year I go in <a target="_blank" href="https://maps.google.com/maps?q=Hotel+San+Marco+city+resort+%26+SPA,+Via+Baldassarre+Longhena,+Verona,+VR,+Italia&hl=it&ll=45.441104,10.97193&spn=0.010358,0.021329&sll=45.44011,10.971791&sspn=0.00259,0.005332&oq=Hotel+San+Marco+&hq=Hotel+San+Marco+city+resort+%26+SPA,&hnear=Via+Baldassarre+Longhena,+Verona,+Veneto,+Italia&t=m&z=16&iwloc=A" >Verona</a> for the <a target="_blank" href="http://2013.phpday.it" >PHPDay</a>
+
+                        In winter I snowboard with <a target="_blank" href="http://www.ridernation.it">Rider Nation</a> guys.
+
+                        Sometimes in summer I shot several arrows with <a target="_blank" href="http://www.sevenarrows.it/">Seven Arrows</a> people.
+                        <br/>
+
+                        That's all for now!
+
+                        Bye!
+                        #}
+
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <br/>
+                    <h3>Skills</h3>
+                    <div class="subtitle">
+                        Un riassunto grafico di ciò che so (e mi piace) fare...
+                    </div>
+                    <div class="skills">
+                        {% render "DanMainBundle:Widget:skills" %}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <br/>
+                    <h3>Jobs and Confs</h3>
+                    <div class="subtitle">
+                        Cosa ho fatto di bello negli ultimi tempi...
+                    </div>
+                    <div class="jobs">
+                        {% render "DanMainBundle:Widget:jobs" %}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span8">
+                    <h3><a href="http://blog.danilosanchi.net">Dal Blog</a></h3>
+                    <div class="subtitle">
+                        Le ultime cose che ho scritto...
+                    </div>
+                    {% render "DanMainBundle:Widget:rssFeeds" %}
+                </div>
+                <div class="span4">
+                    <h3><a target="_blank" href="https://www.google.com/calendar/embed?src=74ojsha6ov45h3nrrses5bp548%40group.calendar.google.com&ctz=Europe/Rome">Dal Calendario</a></h3>
+                    <div class="subtitle">
+                        Alcuni eventi interessanti da prendere in considerazione...
+                    </div>
+                    {% render "DanMainBundle:Widget:googleCalendar" %}
+                </div>
+                {#<div class="span4">
+                    <h3><a href="{{path('jobs')}}">Jobs</a></h3>
+                    <div class="subtitle">
+                        Cosa ho fatto di bello negli ultimi tempi...
+                    </div>
+                    <div class="jobs">
+                        {% render "DanMainBundle:Widget:jobs" %}
+                    </div>
+                    <br/>
+                    <br/>
+                </div>#}
+            </div>
+        </div>
+        {% include "DanMainBundle:Default:_footer.html.twig" %}
+    </div>
+{% endblock container %}

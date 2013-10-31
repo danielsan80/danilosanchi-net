@@ -1,0 +1,55 @@
+[00;36mBuildfile: /home/danilo/www/danilosanchi-net/build.xml[m
+[00;36m [property] Loading /home/danilo/www/danilosanchi-net/app/phing/build.properties[m
+[01;35m [property] Unable to find property file: /home/danilo/www/danilosanchi-net/app/phing/build.properties... skipped[m
+[00;32m
+symfony > design:
+[m
+[00;36m     [echo] Cache[m
+[00;36m[phingcall] Calling Buildfile '/home/danilo/www/danilosanchi-net/build.xml' with target 'cc'[m
+[00;36m [property] Loading /home/danilo/www/danilosanchi-net/app/phing/build.properties[m
+[01;35m [property] Unable to find property file: /home/danilo/www/danilosanchi-net/app/phing/build.properties... skipped[m
+[00;32m
+symfony > cc:
+[m
+[00;36m     [echo] Assets[m
+[00;36m     [echo] Installing assets using the hard copy option
+Installing assets for Symfony\Bundle\FrameworkBundle into web/bundles/framework
+Installing assets for Sonata\jQueryBundle into web/bundles/sonatajquery
+Installing assets for Sonata\AdminBundle into web/bundles/sonataadmin
+Installing assets for Dan\MainBundle into web/bundles/danmain
+Installing assets for Dan\CommonBundle into web/bundles/dancommon
+Installing assets for Symfony\Bundle\WebProfilerBundle into web/bundles/webprofiler
+Installing assets for Sensio\Bundle\DistributionBundle into web/bundles/sensiodistribution[m
+[00;36m     [echo] Assetic[m
+[00;36m     [echo] Dumping all dev assets.
+Debug mode is on.
+
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/signature.jpg
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/signature_signature_1.jpg
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/picture.jpg
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/picture_picture_1.jpg
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/frame.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/frame_frame_1.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/picture.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/picture_coffee_1.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/scotch.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/scotch_scotch_1.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/icons/Linkedin_48px.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/icons/Linkedin_48px_Linkedin_48px_1.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/icons/Github_48px.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/icons/Github_48px_Github_48px_1.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/icons/Twitter_48px.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/icons/Twitter_48px_Twitter_48px_1.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/icons/Wordpress_48px.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/icons/Wordpress_48px_Wordpress_48px_1.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/icons/Slideshare_48px.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web//images/icons/Slideshare_48px_Slideshare_48px_1.png
+11:07:37 [file+] /home/danilo/www/danilosanchi-net/app/../web/css/5e88736.css
+11:07:40 [file+] /home/danilo/www/danilosanchi-net/app/../web/css/5e88736_index_1.css
+11:07:44 [file+] /home/danilo/www/danilosanchi-net/app/../web/css/247a60e.css
+11:07:44 [file+] /home/danilo/www/danilosanchi-net/app/../web/css/247a60e_jquery-ui-1.8.18.custom_1.css[m
+[00;32m
+BUILD FINISHED
+
+Total time: 13.0915 seconds
+[m

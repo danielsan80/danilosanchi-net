@@ -1,6 +1,7 @@
 {% extends '::base.html.twig' %}
+{% from '::flash.html.twig' import session_flash %}
 
-{% block title %}My Title{% endblock %}
+{% block title %}Danilo Sanchi{% endblock %}
 
 {% block head_style %}
     {% stylesheets filter='lessphp,cssembed,?yui_css'
@@ -17,20 +18,38 @@
             rel="stylesheet"
             media="screen" />
     {% endstylesheets %}
+    <link href="http://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" type="text/css">
+    <link href="/bundles/danmain/jQueryGantt/css/style.css" rel="stylesheet" type="text/css">
 {% endblock %}
 
 {% block head_script %}
+    <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+        $.src='//cdn.zopim.com/?11rm2VNjiDxkfDvZbO5RzOG3HiOvda2Q';z.t=+new Date;$.
+        type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+        </script>
+    <!--End of Zopim Live Chat Script-->
+    
     <script data-main="bundles/danmain/js/main" src="bundles/danmain/js/libs/require/require.js"></script>
 {% endblock %}
 
 {% block body %}
+    {% block navbar %}
+        {% include 'DanMainBundle::navbar.html.twig' %}
+    {% endblock navbar %}
 
     {% block container %}
-        {% block navbar %}
-            {% include 'DanMainBundle::navbar.html.twig' %}
-        {% endblock navbar %}
         <div class="container">
             <div class="content">
+                <div class="page-header">
+                    <h1>{% block headline %}{% endblock %}</h1>
+                </div>
+                {% block flashes %}
+                    {{ session_flash() }}
+                {% endblock flashes %}
                 {% block content %}
                 {% endblock content %}
             </div>
@@ -51,6 +70,35 @@
             if (window.location.pathname == '/_=_'){
                 window.location.pathname = '';
             }
+        </script>
+        
+        <script type="text/javascript">
+            $(function() {
+
+                "use strict";
+
+                $(".gantt").gantt({
+                    source: {% render 'DanMainBundle:Widget:jobsData' %},
+                    scale: "months",
+                    minScale: "days",
+                    maxScale: "years",
+                    months: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
+                    dow: ["D", "L", "M", "M", "G", "V", "S"],
+                    navigate: "scroll",
+                    itemsPerPage: 10,
+                    scrollToToday: true,
+                    onItemClick: function(data) {
+
+                    }
+                });
+
+    //                    $(".gantt").popover({
+    //                            selector: ".bar",
+    //                            title: "I'm a popover",
+    //                            content: "And I'm the content of said popover."
+    //                    });
+
+            });
         </script>
 
 {% endblock foot_script %} 

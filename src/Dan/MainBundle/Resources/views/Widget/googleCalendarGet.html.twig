@@ -1,0 +1,20 @@
+{% for event in events %}
+    <article>
+        <div class="date">
+            {% if event.multiDays %}
+                {{ event.startDate|date('d/m') }} - {{ event.endDate|date('d/m/Y') }},
+            {% else %}
+                {{ event.startDate|date('d/m/Y') }},
+            {% endif %}
+            {{event.location}}
+            {% if not event.confirmed %} <i class="icon-exclamation-sign" title="Date not confirmed"></i>{% endif%}
+        </div>
+        <div class="title">
+            <a target="_blank" href="{{event.url}}">{{event.name}}</a>
+            {% if event.attended %} <i class="icon-user" title="I'll attend!"></i>{% endif%}
+        </div>
+        <div class="description">
+            {{event.description}}
+        </div>
+    </article>
+{% endfor %}
