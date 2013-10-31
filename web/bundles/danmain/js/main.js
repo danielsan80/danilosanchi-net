@@ -2,6 +2,8 @@ require.config({
     paths: {
         'jquery': 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min',
         'json2': 'http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2',
+        'd3': 'http://d3js.org/d3.v3.min',
+        
         'jquery-ui': '../jquery-ui-1.8.18.custom/js/jquery-ui-1.8.18.custom.min',
         'underscore': 'libs/underscore/underscore',
         'backbone': 'libs/backbone/backbone',
@@ -32,6 +34,9 @@ require.config({
         'backbone-relational': {
             deps: ['backbone'],
             exports: 'Backbone'
+        },
+        'd3': {
+            exports: 'd3'
         }
     }
 

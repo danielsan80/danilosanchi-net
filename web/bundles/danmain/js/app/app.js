@@ -1,7 +1,9 @@
 define([
-], function(){
+    'app/router'
+], function(Router){
 
     var initialize = function() {
+        Router.initialize();
     };
 
     return {
