@@ -1,0 +1,199 @@
+{
+    "name": "skills",
+    "description": "quali sono le mie competenze?",
+    "size": 450,
+    "color": "#ff8585", 
+    "children": [
+    {
+        "name": "server",
+        "description": "appartengo al lato server della Forza",
+        "size": 1000,
+        "level": 100,
+        "children": [
+        {
+            "name": "PHP",
+            "description": "Facebook, Wordpress, Drupal sono scritti in PHP. Da semplice linguaggio di scripting è maturato piano piano fino a diventare un linguaggio di programmazione web open source completo ed affidabile.",
+            "size": 1320,
+            "level": 100,
+            "children": [
+            {
+                "name": "Symfony 2", 
+                "description": "Il più recente, potente e innovativo framework PHP insieme a Zend Framework. Il primo ad abbracciare il Web per come era stato concepito all'inizio.",
+                "size": 700,
+                "level": 75
+            },
+            {
+                "name": "Silex", 
+                "description": "Il fratello minore di Symfony 2, un microframework utilizzimo per piccole applicazioni e siti e per sperimentare nuove tecnologie.",
+                "size": 550,
+                "level": 65
+            },
+            {
+                "name": "Wordpress", 
+                "description": "La piattaforma per blog e siti internet più installata al mondo. Nonostante architetturalmente non sia particolarmente limpido la sua semplicità d'uso e la forte comunità l'ha portato al successo.",
+                "size": 300,
+                "level": 45
+            }
+            ]
+        }
+        ]
+    },
+    {
+        "name": "client",
+        "description": "non posso non conoscere anche il lato client della Forza",
+        "size": 900,
+        "level": 90,
+        "children": [
+        {
+            "name": "Javascript",
+            "description": "Sta ai linguaggi di programmazione come l'inglese sta alle lingue del mondo dato che sta invadendo i progetti software di qualsiasi contesto. Il suo nome è sinonimo di responsività ed è merito suo se Facebook, Google, Trello e tanti altri sono così piacevoli da usare.",
+            "size": 1010,
+            "level": 90,
+            "children": [
+            {
+                "name": "jQuery", 
+                "description": "E' un framework che semplifica e potenzia il javascript di un'applicazione web, facilitando il lavoro di crossbrowsing, di manipolazione del DOM, di gestione delle interazioni con il server tramite AJAX.",
+                "size": 770,
+                "level": 95
+            },
+            {
+                "name": "Backbone", 
+                "description": "E' un framework MVC che permette di implementare applicazioni complesse e ben strutturate lato cliente, appoggiandosi su jQuery e altre librerie Javascript.",
+                "size": 300,
+                "level": 37
+            },
+            {
+                "name": "D3", 
+                "description": "Ci ho fatto questo grafico. E' una libreria per la genarazione di rappresentazioni grafiche dinamiche di dati strutturati.",
+                "size": 200,
+                "level": 30
+            }
+            ]
+        },
+        {
+            "name": "HTML", 
+            "description": "E' il linguaggio di markup per la rappresentazione dei documenti web.",
+            "size": 1200,
+            "level": 100
+        },
+
+        {
+            "name": "CSS", 
+            "description": "E' un linguaggio dichiarativo per la definizione dello stile grafico di un'applicazione web.",
+            "size": 1050,
+            "level": 100,
+            "children": [
+            {
+                "name": "Less",
+                "description": "E' la soluzione a tutti i problemi di gestione del CSS dovuti al fatto di non essere un linguaggio di programmazione. Less è un CSS potenziato con annidamenti, variabili, funzioni e quant'altro",
+                "size": 580,
+                "level": 95
+            },
+            {
+                "name": "Sass",
+                "description": "Sass ha lo stesso scopo di Less ma la sua sintassi è basata su Yaml anziché su CSS",
+                "size": 570,
+                "level": 80
+            },
+            {
+                "name": "Bootstrap",
+                "description": "E' un framework CSS (anche in versione LESS) che solleva il programmatore dal compito di dedicare tempo all'aspetto grafico ottenendo comunque qualcosa di gradevole alla vista.",
+                "size": 420,
+                "level": 95
+            }
+            ]
+        }
+        ]
+    },
+    {
+        "name": "deploy",
+        "description": "E' il processo con il quale l'applicazione viene messa online. Automatizzare il deploy è una delle prime cose da fare per ridurre lo stress e la possibilità di errori.",
+        "size": 600,
+        "level": 75,
+        "children": [
+        {
+            "name": "Capistrano", 
+            "description": "E' scritto in Ruby e nasce per semplificare la scrittura di script di deploy di applicazioni RoR. Tuttavia si può utilizzare per il deploy di applicazioni scritte in altri linguaggi.",
+            "size": 550,
+            "level": 75,
+            "children": [
+            {
+                "description": "E' la ricetta per automatizzare il deploy di applicazioni Symfony 2.",
+                "name": "Capifony", 
+                "size": 520,
+                "level": 70
+            }
+            ]
+        },
+        {
+            "name": "ssh", 
+            "description": "Un comodo modo per connettersi via shell ad altre macchine coinvolte nel progetto",
+            "size": 400,
+            "level": 85,
+            "children": [
+            {
+                "description": "Un fantastico strumento per spostare grandi moli di dati da un directory all'altra, indipendentemente da dove queste si trovino sulla rete.",
+                "name": "rsync", 
+                "size": 300,
+                "level": 85
+            }
+            ]
+        }
+        ]
+    },
+    {
+        "name": "versioning",
+        "description": "Il versioning è la pratica attraverso la quale si tiene traccia di tutte le modifiche effettuate ad una applicazione dalla sua prima riga di codice. ",
+        "size": 860,
+        "level": 100,
+        "children": [
+        {
+            "name": "svn", 
+            "description": "E' uno dei più diffusi sistemi di versionamento esistenti ma soffre di alcuni difetti strutturali che lo rendono poco versatile.",
+            "size": 430,
+            "level": 65
+        },
+        {
+            "name": "Git", 
+            "description": "E' il sistema di versionamento nato per gestire il codice del kernel di Linux. E' veloce ed efficace.",
+            "size": 960,
+            "level": 95,
+            "children": [
+            {
+                "name": "Github", 
+                "description": "E' il social network dei programmatori. E' la piattaforma grazie alla quale e grazie a Git gli sviluppatori di tutto il mondo possono collaborare allo stesso codice, pubblico o privato che sia, nel modo più efficiente ad ora possibile",
+                "size": 830,
+                "level": 88
+            }
+            ]
+        }
+        ]
+    },
+    {
+        "name": "agile",
+        "description": "Le metodologie agili si contrappongono al modello lavorativo ormai obsoleto del 1900. Responsabilità e fiducia nel singolo, smantellamento delle gerarchie, creazione di team autosufficienti, feedback continuo, testing del codice non sono più discutibili di fronte al successo di chi le pratica e al fallimento degli approcci convenzionali.",
+        "size": 430,
+        "level": 70,
+        "children": [
+        {
+            "name": "Scrum", 
+            "description": "Una metodoligia agile semplice ed efficace, difficilmente contestabile. Una breve lettura dei principi e PivotalTracker ad aiutarci a rispettarla e ci chiederemo presto come facevamo senza.",
+            "size": 490,
+            "level": 80
+        },
+        {
+            "name": "Kanban", 
+            "description": "Semplicissimo metodo esportato dalla Toyota per evidenziare il flusso di lavoro e gli eventuali colli di bottiglia. Si sposa felicemente con Scrum. Una breve lettura e non potremo fare a meno di comprare postit, pennarelli ed una whiteboard (oppure di Trello)",
+            "size": 380,
+            "level": 80
+        },
+        {
+            "name": "TDD", 
+            "description": "Test Driven Development è una pratica indispensabile per ogni metodologia di sviluppo agile. Permette di descrivere il codice con il codice. Di scrivere nel codice ciò che l'applicazione deve fare prima ancora di scrivere come lo deve fare. Permette di non avere più bug e inpedisce all'applicazione degenerare con il tempo.",
+            "size": 550,
+            "level": 67
+        }
+        ]
+    }
+    ]
+}

@@ -1,6 +1,6 @@
 set :application, "danilosanchi"
-set :domain,      "new.danilosanchi.net"
-set :deploy_to,   "/var/www/vhosts/new.danilosanchi.net/symfony_projects/"
+set :domain,      "danilosanchi.net"
+set :deploy_to,   "/var/www/vhosts/#{domain}/symfony_projects/projects/danilosanchi"
 
 role :web,        domain
 role :app,        domain                    
@@ -11,7 +11,7 @@ set :repository,  "git@github.com:danielsan80/danilosanchi-net.git"
 set :scm,         :git
 
 set :deploy_via,      :rsync_with_remote_cache
-set :user,       "tmp"
+set :user,       "danilosa"
 ssh_options[:port] = 22123
 
 set :shared_children, ["vendor", "web", "app", "app/config", "app/logs", "app/files/images/users", "/web/media"]

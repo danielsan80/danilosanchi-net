@@ -1,0 +1,146 @@
+-
+    name: Celera
+    desc: |
+        Come dipendente, web developer e web designer.</br>
+        Web agency a Riccione.<br/>
+        Abbiamo costruito piccoli e grandi progetti,<br/>
+        siti e applicazioni web.
+    values:
+        -
+            from: "2007-06-02"
+            to: "2008-12-31"
+            label: Celera
+            color: Celera
+-
+    name: Retina
+    desc: |
+        Come dipendente, web developer.<br/>
+        Web agency a Cattolica.<br/>
+        Abbiamo realizzato insieme per progetti,<br/>
+        siti e applicazioni web.
+    values:
+        -
+            from: "2009-01-02"
+            to: "2011-12-31"
+            label: Retina
+            color: Retina
+-
+    name: ABMundi
+    desc: |
+        Come Cofounder, lead developer.<br/>
+        ABMundi è un goal based social network in forma prototipale.<br/>
+        abmundi.com
+
+    values:
+        -
+            from: "2012-01-02"
+            to: "2012-12-31"
+            label: ABMundi
+            color: ABMundi
+-
+    name: Ideato
+    desc: |
+        Come freelance, web developer.<br/>
+        Web integrator di Cesena che non ha bisogno di presentazioni.<br/>
+        Seppur per un piccolo progetto, lavorare con i migliori è stato un onore.
+
+    values:
+        -
+            from: "2012-08-02"
+            to: "2012-08-31"
+            desc: |
+                Un progetto piccolo e semplice che,<br/>
+                seppur andato a buon fine nei modi e nei tempi stabiliti<br/>
+                non è stato ancora varato sul web dal cliente finale.
+            label: Idrolab
+            color: Ideato
+
+-
+    name: Iabadabadu
+    desc: |
+        Come freelance, web developer, consulente informatico, CTO<br/>
+        Studio di comunicazione di Fano
+    values:
+        -
+            from: "2013-03-11"
+            to: now
+            label: Arbo
+            desc: |
+                Un interessante progetto di refactoring di un vecchio sito aziendale.<br/>
+                L'abbiamo sradicato e trapiantato, gli abbiamo iniettato Symfony 2,<br/>
+                che piano piano si sta mangiando il vecchio e malridotto codice,<br/>
+                e adesso sta tornando a crescere.
+            color: Arbo
+
+-
+    name: PHPDay
+    desc: Conferenza italiana sul mondo PHP
+    values:
+        -
+            from: "2009-05-16"
+            to: "2009-05-16"
+            label: PHPDay 2009
+            desc: |
+                PHPDay 2009 - Verona
+            color: PHPDay
+        -
+            from: "2010-05-13"
+            to: "2010-05-15"
+            label: PHPDay 2010
+            desc: |
+                PHPDay 2010 - Corropoli
+            color: PHPDay
+        -
+            from: "2011-05-12"
+            to: "2011-05-14"
+            label: PHPDay 2011
+            desc: |
+                PHPDay 2011 - Verona
+            color: PHPDay
+        -
+            from: "2012-05-18"
+            to: "2012-05-19"
+            label: PHPDay 2012
+            desc: |
+                PHPDay 2012 - Verona
+            color: PHPDay
+        -
+            from: "2013-05-17"
+            to: "2013-05-18"
+            label: PHPDay 2013
+            desc: |
+                PHPDay 2013 - Verona
+            color: PHPDay
+-
+    name: JSDay
+    desc: "Conferenza italiana sul mondo Javascript"
+    values:
+        -
+            from: "2011-05-11"
+            to: "2011-05-12"
+            label: JSDay 2012
+            desc: |
+                JSDay 2011 - Verona<br/>
+                Nasce il fratellino del PHPDay
+            color: JSDay
+        -
+            from: "2013-05-15"
+            to: "2013-05-16"
+            label: JSDay 2013
+            desc: |
+                JSDay 2011 - Verona
+            color: JSDay
+-
+    name: SymfonyDay
+    desc: "Conferenza italiana su Symfony"
+    values:
+        -
+            from: "2012-10-05"
+            to: "2012-10-05"
+            label: SfDay 2012
+            desc: |
+                SfDay 2012 - Torino<br/>
+                Nasce la prima conferenza interamente<br/>
+                dedicata a Sf2 in Italia
+
+            color: SfDay
