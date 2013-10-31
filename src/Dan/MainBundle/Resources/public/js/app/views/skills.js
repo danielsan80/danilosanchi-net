@@ -3,7 +3,8 @@ define([
   'underscore', 
   'backbone-loader',
   'd3',
-], function($, _, Backbone, d3){
+  'app/util/prefix',
+], function($, _, Backbone, d3, prefix){
          
     var SkillsView = Backbone.View.extend({
         el: $("div.canvas"),
@@ -40,7 +41,7 @@ define([
                 .attr("width", '100%')
                 .attr("height", h);
                 
-            d3.json("widget/skills/data", function(json) {
+            d3.json(prefix + "/widget/skills/data", function(json) {
                 root = json;
                 root.fixed = true;
                 

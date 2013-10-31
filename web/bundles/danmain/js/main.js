@@ -4,7 +4,10 @@ require.config({
         'json2': 'http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2',
         'd3': 'http://d3js.org/d3.v3.min',
         
-        'jquery-ui': '../jquery-ui-1.8.18.custom/js/jquery-ui-1.8.18.custom.min',
+        'jquery-ui': 'libs/jquery/jquery-ui-1.8.18.custom/js/jquery-ui-1.8.18.custom.min',
+        'jquery-gantt': 'libs/jquery/jQueryGantt/js/jquery.fn.gantt',
+        'jquery-jfeed': 'libs/jquery/jquery.jfeed',
+        
         'underscore': 'libs/underscore/underscore',
         'backbone': 'libs/backbone/backbone',
         'backbone-relational': 'libs/backbone/backbone-relational',
@@ -12,7 +15,7 @@ require.config({
         'backbone-loader': 'libs/loader/backbone',
         'jquery-loader': 'libs/loader/jquery',
         
-        'templates': '../templates',
+        'templates': 'app/views/templates',
         
         'eventie': 'libs/bower_components/eventie',
         'doc-ready': 'libs/bower_components/doc-ready',
@@ -22,6 +25,8 @@ require.config({
         'matches-selector': 'libs/bower_components/matches-selector',
         'outlayer': 'libs/bower_components/outlayer',
         'masonry': 'libs/bower_components/masonry',
+        
+        'text': 'libs/bower_components/text/text',
     },
     shim: {
         'backbone': {
@@ -37,7 +42,9 @@ require.config({
         },
         'd3': {
             exports: 'd3'
-        }
+        },
+        'jquery-gantt': ['jquery'],
+        'jquery-feed': ['jquery']   
     }
 
 });

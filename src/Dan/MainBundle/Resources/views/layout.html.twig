@@ -11,7 +11,7 @@
             media="screen" />
     {% endstylesheets %}
     {% stylesheets filter='cssembed,?yui_css'
-        '@DanMainBundle/Resources/public/jquery-ui-1.8.18.custom/css/ui-lightness/jquery-ui-1.8.18.custom.css'
+        '@DanMainBundle/Resources/public/js/libs/jquery/jquery-ui-1.8.18.custom/css/ui-lightness/jquery-ui-1.8.18.custom.css'
          %}
         <link href="{{ asset_url }}"
             type="text/css"
@@ -19,7 +19,7 @@
             media="screen" />
     {% endstylesheets %}
     <link href="http://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" type="text/css">
-    <link href="/bundles/danmain/jQueryGantt/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/bundles/danmain/js/libs/jquery/jQueryGantt/css/style.css" rel="stylesheet" type="text/css">
 {% endblock %}
 
 {% block head_script %}
@@ -70,35 +70,6 @@
             if (window.location.pathname == '/_=_'){
                 window.location.pathname = '';
             }
-        </script>
-        
-        <script type="text/javascript">
-            $(function() {
-
-                "use strict";
-
-                $(".gantt").gantt({
-                    source: {% render 'DanMainBundle:Widget:jobsData' %},
-                    scale: "months",
-                    minScale: "days",
-                    maxScale: "years",
-                    months: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
-                    dow: ["D", "L", "M", "M", "G", "V", "S"],
-                    navigate: "scroll",
-                    itemsPerPage: 10,
-                    scrollToToday: true,
-                    onItemClick: function(data) {
-
-                    }
-                });
-
-    //                    $(".gantt").popover({
-    //                            selector: ".bar",
-    //                            title: "I'm a popover",
-    //                            content: "And I'm the content of said popover."
-    //                    });
-
-            });
         </script>
 
 {% endblock foot_script %} 
