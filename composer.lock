@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "3294daeb075c0013ce30ddd7a63371a9",
+    "hash": "b51e07d8cf2534d13c567ee667d9abc8",
     "packages": [
         {
             "name": "avalanche123/imagine-bundle",
@@ -3611,8 +3611,6 @@
     "stability-flags": {
         "twig/extensions": 20,
         "kriswallsmith/assetic": 20,
-        "bitgandtter/google-bundle": 20,
-        "bitgandtter/google-api": 20,
         "simplethings/entity-audit-bundle": 20,
         "leafo/lessphp": 20,
         "liip/doctrine-cache-bundle": 20,
