@@ -43,14 +43,15 @@ class WidgetController extends Controller
      */
     public function googleCalendarGetAction()
     {
-        $key = 'AIzaSyAKC5K-0H6mt2rpjwMkn9SwneTR2P867J8';
+        $key = 'AIzaSyAs3Q6YI5Ptsu4obavUGXAh_9Muq2O7oLU';
         $id = '74ojsha6ov45h3nrrses5bp548@group.calendar.google.com';
         
         $client = new \Guzzle\Http\Client();
-        $client->setBaseUrl('https://www.googleapis.com/calendar/v3?key='.$key);
+        $client->setBaseUrl('https://www.googleapis.com/calendar/v3');
         $request = $client->get('calendars/'.$id.'/events');
         $query = $request->getQuery();
-        $start = new \DateTime('-2 weeks');
+        $start = new \DateTime('-4 weeks');
+        $query->set('key', $key);
         $query->set('timeMin', $start->format('Y-m-d\TH:i:s.000P'));
         $query->set('orderBy', 'startTime');
         $query->set('singleEvents', 'true');
